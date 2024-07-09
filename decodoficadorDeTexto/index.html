@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificador de texto</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="imagens/criptografia-de-dados.png" alt="Imagem de uma folha de papel escrita em binário com uma chave na frente. Esta no contexto de representar algo criptografado.">
+        <h1>Codificador de texto</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="input">
+                <h2 for="inputText">Texto:</h2>
+                <textarea id="inputText" placeholder="Insira o texto aqui. Use apenas letras minúsculas e sem acentos ortográficos!"></textarea>
+            </div>
+
+            <div id="output">
+                <h2 for="outputText">Resultado:</h2>
+                <textarea id="outputText" placeholder="Resultado da criptografia/descriptografia" readonly></textarea>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button  onclick="criptografar()" id="codificarBtn">Codificar</button>
+            <button  onclick="descriptografar()" id="descodificarBtn">Descodificar</button>
+            <button  onclick="copiarTexto()" id="copiarBtn">Copiar resultado</button>
+            <button onclick="limparCampos()" id="limparCampos">Limpar campos</button>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
